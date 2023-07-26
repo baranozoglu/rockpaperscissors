@@ -85,16 +85,16 @@ If you clone from github, please follow below commands on terminal
 <pre>
 git clone https://github.com/baranozoglu/rockpaperscissors.git
 cd rockpaperscissors/src
-javac RockScissorsPaper.java
-java RockScissorsPaper
+javac RockPaperScissors.java
+java RockPaperScissors
 </pre>
 
 If you downloaded zip file, please follow below commands on terminal
 <pre>
 unzip rockpaperscissors.zip 
 cd rockpaperscissors/src
-javac RockScissorsPaper.java
-java RockScissorsPaper
+javac RockPaperScissors.java
+java RockPaperScissors
 </pre>
 
 ### Design Pattern
