@@ -1,12 +1,12 @@
 import exceptions.IllegalGestureException;
-import model.Gesture;
+import gesture.Gesture;
 import model.Paper;
 import model.Rock;
 import model.Scissors;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static service.GestureFactory.createGesture;
+import static gesture.GestureFactory.createGesture;
 import static service.UserService.getUserChoice;
 
 public class GestureFactoryTest {

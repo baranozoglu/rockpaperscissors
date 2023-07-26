@@ -1,9 +1,7 @@
 # Rock Paper Scissors Game
 
-Welcome to the Rock Paper Scissors game! This is a simple console-based Java application that allows you to play the
+This is a simple console-based Java application that allows you to play the
 classic Rock Paper Scissors game against the computer.
-
-#### Gameplay Rules
 
 The rules of Rock Paper Scissors are simple:
 
@@ -11,9 +9,18 @@ The rules of Rock Paper Scissors are simple:
 - Scissors beats Paper
 - Paper beats Rock
 
-### Rock Paper Scissors
+```sh
+____________________________
+Options to choose from :
+1.ROCK
+2.PAPER
+3.SCISSORS
+____________________________
+You can type either name or number of your choice. To quit type q or quit!
 
-![](/Users/baranozoglu/Documents/projects/git/RockPaperScissors/resources/Screenshot 2023-07-26 at 18.22.38.png)
+Please make your choice: 
+```
+
 The computer will randomly select its move, and the result of the round will be displayed.
 
 After showing the result, the menu will reappear after a 3-second delay, allowing you to play again.
@@ -21,7 +28,74 @@ After showing the result, the menu will reappear after a 3-second delay, allowin
 The game will keep running until you choose to quit by typing 'q' or 'quit'.
 
 Once you made your choice you will see handshaking with a countdown and the result will be printed to the console.
-![](/Users/baranozoglu/Documents/projects/git/RockPaperScissors/resources/Screenshot 2023-07-26 at 18.23.06.png)
+
+Output for winner player
+
+```sh
+____________________________
+Options to choose from :
+1.ROCK
+2.PAPER
+3.SCISSORS
+____________________________
+You can type either name or number of your choice. To quit type q or quit!
+
+Please make your choice: paper
+HAND SHAKING...3...2...1...!
+
+Computer decision is ROCK ✊, your choice was PAPER ✋🏻. You WON! 🎊 
+```
+
+Output for Tie
+
+```sh
+____________________________
+Options to choose from :
+1.ROCK
+2.PAPER
+3.SCISSORS
+____________________________
+You can type either name or number of your choice. To quit type q or quit!
+
+Please make your choice: rock
+HAND SHAKING...3...2...1...!
+
+Computer decision is ROCK ✊, your choice was ROCK ✊. TIE! 🤝
+```
+
+Output for invalid input
+
+```sh
+____________________________
+Options to choose from :
+1.ROCK
+2.PAPER
+3.SCISSORS
+____________________________
+You can type either name or number of your choice. To quit type q or quit!
+
+Please make your choice: baran
+You type invalid input please choose a valid option from menu!
+```
+
+### How to Compile and Run
+
+To compile the application, you need to have Java Development Kit (JDK) installed on your system.
+If you clone from github, please follow below commands on terminal
+<pre>
+git clone https://github.com/baranozoglu/rockpaperscissors.git
+cd rockpaperscissors/src
+javac RockScissorsPaper.java
+java RockScissorsPaper
+</pre>
+
+If you downloaded zip file, please follow below commands on terminal
+<pre>
+unzip rockpaperscissors.zip 
+cd rockpaperscissors/src
+javac RockScissorsPaper.java
+java RockScissorsPaper
+</pre>
 
 ### Design Pattern
 
@@ -40,27 +114,3 @@ I have chosen a design pattern as Factory Design Pattern to be able to easily ex
 
 In summary, the Factory Design Pattern simplifies gesture creation, ensures the presence of the necessary beats method
 in all gestures, and makes the game easily extensible for future additions or changes.
-
-### How to Compile
-
-To compile the application, you need to have Java Development Kit (JDK) installed on your system. Follow the steps below
-to compile the code:
-
-Open a terminal or command prompt.
-Navigate to the directory where the 'RockPaperScissors.java' file is located.
-Use the javac command to compile the source code:
-
-- javac RockPaperScissors.java
-
-The compilation will generate the 'RockPaperScissors.class' file.
-
-### How to Run
-
-Once the application is compiled, you can run it using the following steps:
-
-In the same terminal or command prompt, enter the following command:
-
-- java RockPaperScissors
-
-The game will start, and you will see the following menu:
-markdown

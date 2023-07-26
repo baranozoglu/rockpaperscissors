@@ -1,7 +1,7 @@
 package service;
 
 import common.Gestures;
-import model.Gesture;
+import gesture.Gesture;
 
 import static common.MessageProperties.*;
 

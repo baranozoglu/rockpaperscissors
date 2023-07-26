@@ -1,4 +1,4 @@
-package model;
+package gesture;
 
 public interface Gesture {
     String getEmoji();

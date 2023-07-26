@@ -1,4 +1,4 @@
-import model.Gesture;
+import gesture.Gesture;
 import model.Paper;
 import model.Rock;
 import model.Scissors;

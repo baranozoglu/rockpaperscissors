@@ -1,6 +1,7 @@
 package model;
 
 import common.Gestures;
+import gesture.Gesture;
 
 public class Scissors implements Gesture {
 

@@ -1,7 +1,6 @@
-package service;
+package gesture;
 
 import common.Gestures;
-import model.Gesture;
 import model.Paper;
 import model.Rock;
 import model.Scissors;
