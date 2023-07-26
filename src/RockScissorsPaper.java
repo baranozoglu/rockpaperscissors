@@ -39,6 +39,10 @@ public class RockScissorsPaper {
         showHandShake();
         determineAndPrintWinner(computerGesture, userGesture);
 
+        sleepAndRecallMethod(scanner);
+    }
+
+    private static void sleepAndRecallMethod(Scanner scanner) {
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
