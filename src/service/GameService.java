@@ -13,10 +13,7 @@ import static service.UserService.*;
 
 public class GameService {
 
-    private GameService() {
-    }
-
-    public static void play(Scanner scanner) {
+    public void play(Scanner scanner) {
         showMenu();
         showPlayerMakeDecision();
         String userInput = scanner.nextLine().trim();
@@ -43,7 +40,7 @@ public class GameService {
         sleepAndRecallMethod(scanner);
     }
 
-    private static void sleepAndRecallMethod(Scanner scanner) {
+    private void sleepAndRecallMethod(Scanner scanner) {
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

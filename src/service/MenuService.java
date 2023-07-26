@@ -6,21 +6,18 @@ import static common.MessageProperties.*;
 
 
 public class MenuService {
-    private MenuService() {
-    }
-
     public static void showMenu() {
         StringBuilder sb = new StringBuilder();
         sb.append(SEPARATOR + OPTIONS);
         for (Gestures option : Gestures.values()) {
             appendOption(sb, option);
         }
-        System.out.println(sb.append(SEPARATOR + EXPLANATION));
+        System.out.println(sb.append(SEPARATOR + OPTIONS_EXPLANATION));
     }
 
 
     public static void warnUserForValidInput() {
-        System.out.println(WARN);
+        System.out.println(WARN_USER_INVALID_INPUT);
     }
 
     public static void showHandShake() {
@@ -36,7 +33,7 @@ public class MenuService {
     }
 
     public static void showPlayerMakeDecision() {
-        System.out.print(PLAYER_MAKE);
+        System.out.print(PLAYER_MAKE_CHOICE);
     }
 
     private static void appendOption(StringBuilder sb, Gestures option) {

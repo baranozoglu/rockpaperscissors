@@ -6,9 +6,6 @@ import static common.MessageProperties.QUIT_CHAR;
 import static common.MessageProperties.QUIT_WORD;
 
 public class UserService {
-    private UserService() {
-    }
-
     public static Gestures getUserChoice(String input) {
         return Gestures.getGestureByInput(input);
     }

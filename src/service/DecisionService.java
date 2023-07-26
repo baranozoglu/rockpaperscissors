@@ -6,8 +6,6 @@ import gesture.Gesture;
 import static common.MessageProperties.*;
 
 public class DecisionService {
-    private DecisionService() {
-    }
 
     public static Gestures generateComputerChoice() {
         return Gestures.determineComputerChoice();

@@ -1,11 +1,11 @@
-import java.util.Scanner;
+import service.GameService;
 
-import static service.GameService.play;
+import java.util.Scanner;
 
 public class RockPaperScissors {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        play(scanner);
+        GameService game = new GameService();
+        game.play(new Scanner(System.in));
     }
 
 }
