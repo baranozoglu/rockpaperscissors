@@ -3,6 +3,8 @@ package model;
 import common.Gestures;
 import gesture.Gesture;
 
+import java.util.Objects;
+
 public class Paper implements Gesture {
 
     @Override
@@ -17,6 +19,6 @@ public class Paper implements Gesture {
 
     @Override
     public boolean beats(Gesture gesture) {
-        return Gestures.ROCK.name().equals(gesture.getName());
+        return Objects.equals(Gestures.ROCK.name(), gesture.getName());
     }
 }
